@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" 
+    href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class="display-1">Weather Dashboard</h1>
+    </header>
+
+    <div clas="container">
+        <form class="city-form">
+            <label for="city-input">Search for a city:</label>
+            <br>        
+                
+            <input id="add-city"></input><button class="searchBtn"><i class="fas fa-search"></i></button>
+            <ul id="city-list">
+                <p class="name">New York</p>
+                <p class="name">Los Angeles</p>
+                <p class="name">Tokyo</p>
+                <p class="name">San Francisco</p>
+                <p class="name">Madrid</p>
+            </ul>
+            
+        </form>
+                
+        <div class="col-sm-8">
+            <div class="description">
+                <div class="city">
+                    <p id="date"></p>
+                </div>
+                <div id="temperature">Temperature:</div>
+                <div id="humid">Humidity:</div>
+                <div id="wind">Wind Speed:</div>
+                <div id="uv">UV Index:</div>
+            </div>   
+            <h2>5-Day Forecast:</h2>
+
+            <div class="container-fluid">                  
+                <div class="row">
+                    <div class="col sm-3" id="box1"></div>
+                    <div class="col sm-3" id="box2"></div>
+                    <div class="col sm-3" id="box3"></div>
+                    <div class="col sm-3" id="box4"></div>
+                    <div class="col sm-3" id="box5"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="weather.js"></script>
+</body>
+</html>
+
